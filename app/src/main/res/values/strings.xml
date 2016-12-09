@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">EduShare</string>
+    <string name="message_hint">Write a message</string>
+</resources>

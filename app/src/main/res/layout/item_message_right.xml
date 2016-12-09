@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The layout of an individual chat message-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:gravity="right">
+
+    <TextView
+        android:id="@+id/msgid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:paddingLeft="24dp"
+        android:text="001"/>
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/msgid"
+        android:layout_gravity="end"
+        android:text="blahblah"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:paddingBottom="12dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:maxWidth="300dp"
+        android:background="@drawable/chat_bubbles_right"/>
+</RelativeLayout>

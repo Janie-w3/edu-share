@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the layout for a chat window -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtTitle" />
+
+    <ListView
+        android:id="@+id/lstMessages"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:divider="@null"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"/>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:baselineAligned="false"
+        android:elevation="4dp"
+        android:layout_marginTop="10dp"
+        android:focusable="false"
+        android:background="@drawable/white_rectangle">
+
+        <EditText
+            android:id="@+id/txtInputMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/message_hint"
+            android:inputType="textMultiLine|textCapSentences|textAutoComplete"
+            android:layout_marginLeft="16dp" />
+
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:src="@drawable/ic_send_message_24dp"
+            android:onClick="sendMessage"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="16dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

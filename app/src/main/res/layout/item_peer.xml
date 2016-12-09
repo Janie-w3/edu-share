@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Individual row listing for a person on the peer list-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:hapticFeedbackEnabled="true">
+
+    <ImageView
+        android:id="@+id/profile_image_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:src="@drawable/profile_image_circle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+      />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/profile_image_circle">
+    <TextView
+        android:id="@+id/peerid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="001"
+        android:textColor="#000"
+        android:textIsSelectable="false"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/peer_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="links"
+        android:textIsSelectable="false"
+        android:textSize="14sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

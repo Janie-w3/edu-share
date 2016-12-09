@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".MainActivity"
+    tools:background="@drawable/bg">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.80"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:id="@+id/layoutEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnImage"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:enabled="false"
+            android:text="Transfer File"
+            android:layout_weight="0.06" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imgDisplay"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            auto:actualImageScaleType="centerCrop"
+            auto:fadeDuration="300"
+            android:layout_weight="0.10">
+
+
+        </com.facebook.drawee.view.SimpleDraweeView>
+
+    </LinearLayout>
+
+</LinearLayout>
